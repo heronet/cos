@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover, a:active {
+    color: lightgray;
+}
+.navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-caption {
+    display: inline-block;
+    padding-left: 6px;
+}
+mat-toolbar {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
