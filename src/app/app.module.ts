@@ -14,6 +14,10 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './tabs/main/main.component';
+import { NotificationsComponent } from './tabs/main/notifications/notifications.component';
+import { PopUpComponent } from './tabs/main/notifications/pop-up/pop-up.component';
+import { ImagesComponent } from './tabs/main/images/images.component';
+import { GalleryComponent } from './tabs/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { MainComponent } from './tabs/main/main.component';
     HeaderComponent,
     SidenavListComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    NotificationsComponent,
+    PopUpComponent,
+    ImagesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

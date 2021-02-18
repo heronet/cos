@@ -1,9 +1,25 @@
 <div class="example-container mat-elevation-z3">
-  <div fxLayout fxLayoutAlign="center center">Example</div>
+  <div fxLayout fxLayoutAlign="center center">
+    <!-- This one would render only if notifications are fetched -->
+    <app-notifications *ngIf="notifications" [notification]="notifications[notificationIndex]"></app-notifications>
+  </div>
   <div fxFlex fxLayout fxLayoutAlign="flex-end">
     <ul fxLayout fxLayoutGap="5px" class="navigation-items">
-        <li><button mat-icon-button><mat-icon>chevron_left</mat-icon></button></li>
-        <li><button mat-icon-button><mat-icon>chevron_right</mat-icon></button></li>
+        <li><button mat-icon-button (click)="downOne()"><mat-icon>chevron_left</mat-icon></button></li>
+        <li><button mat-icon-button (click)="upOne()"><mat-icon>chevron_right</mat-icon></button></li>
     </ul>
   </div>
+</div>
+<div class="example-container mat-elevation-z3">
+  <div fxLayout fxLayoutAlign="center center">
+    <app-images (click)="upOneImg()" [image]="images[imageIndex]"></app-images>
+  </div>
+</div>
+
+<div class="example-container mat-elevation-z3">
+  <h1 style="text-align: center;">নির্ঝর পরিবারে স্বাগতম…</h1>
+  <p>
+    দৃষ্টিনন্দন সুবিশাল পরিসরে নির্ঝর ক্যান্টনমেন্ট পাবলিক স্কুল ও কলেজ, ঢাকা ক্যান্টনমেন্টে আপনাকে স্বাগতম। অনলাইন সেবা সমৃদ্ধ অনিন্দ্য সুন্দর আমাদের ক্যাম্পাসটি আপনার সন্তানের পড়াশোনার জন্য একটি আদর্শ শিক্ষা প্রতিষ্ঠান। আমাদের সুদক্ষ শিক্ষক ও শিক্ষিকামণ্ডলী, কর্মকর্তাসহ সবাই শিক্ষার ক্ষেত্রে ছাত্র ছাত্রীদেরএকটি বিশ্বস্ত ভিত্তি স্থাপনে সংকল্পবদ্ধ। শিক্ষার প্রতিটি ক্ষেত্রে সর্বোচ্চ মান নিশ্চিত করা–ই আমাদের একমাত্র লক্ষ্য। আমাদের রয়েছে আধুনিক শ্রেণিকক্ষ, উন্নত পাঠাগার, পরীক্ষাগার, সহশিক্ষা কার্যক্রম এবং সার্বক্ষনিক নিরাপত্তা ব্যাবস্থা।
+    সৃজনশীল এবং অগ্রসরমান শিক্ষা প্রতিষ্ঠান হিসাবে আমরা শিক্ষার এমন পরিবেশ নিশ্চিত করতে বদ্ধপরিকর যাতে শিক্ষার্থীরা পড়াশোনা এবং অনুসন্ধানের প্রতি মনযোগি হবে যা তাদেরকে পেশা ও দায়িত্বের মনোভাব নিয়ে বেড়ে উঠতে সাহায্য করবে।
+  </p>
 </div>
