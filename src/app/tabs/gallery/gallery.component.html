@@ -1,1 +1,13 @@
-<p>gallery works!</p>
+<div class="card-container" fxLayout="row wrap" fxFlexFill fxLayoutGap="10px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let event of events; let i = index">
+      <mat-card class="example-card mat-elevation-z4" (click)="openDialog(i)">
+        <mat-card-header>
+          <mat-card-title>{{event.name}} </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="event.pictures[0].imageSrc" [alt]="event.name">
+        <mat-card-content class="description">
+          {{event.description.substring(0, 85)}}...
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>

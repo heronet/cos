@@ -18,6 +18,9 @@ import { NotificationsComponent } from './tabs/main/notifications/notifications.
 import { PopUpComponent } from './tabs/main/notifications/pop-up/pop-up.component';
 import { ImagesComponent } from './tabs/main/images/images.component';
 import { GalleryComponent } from './tabs/gallery/gallery.component';
+import { FlowComponent } from './tabs/gallery/flow/flow.component';
+import { ContactComponent } from './tabs/contact/contact.component';
+import { ClubsComponent } from './tabs/clubs/clubs.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { GalleryComponent } from './tabs/gallery/gallery.component';
     NotificationsComponent,
     PopUpComponent,
     ImagesComponent,
-    GalleryComponent
+    GalleryComponent,
+    FlowComponent,
+    ContactComponent,
+    ClubsComponent
   ],
   imports: [
     BrowserModule,

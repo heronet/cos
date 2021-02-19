@@ -1,0 +1,14 @@
+<div class="card-container" fxLayout="row wrap" fxFlexFill fxLayoutGap="10px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let club of clubs; let i = index">
+      <mat-card class="example-card mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title>{{club.name}} </mat-card-title>
+          <mat-card-subtitle>{{club.leader}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="club.imgSrc" [alt]="club.name">
+        <mat-card-content class="description">
+          {{club.description.length > 150 ? (club.description.substring(0, 145) + '...') : club.description}}
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>

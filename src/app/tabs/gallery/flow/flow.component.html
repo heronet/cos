@@ -1,0 +1,11 @@
+<div class="mat-elevation-z3" style="margin-bottom: 5px;">
+    <div fxLayout fxLayoutAlign="center center">
+      <img [src]="data[imageIndex].imageSrc" [alt]="data[imageIndex].imageSrc">
+    </div>
+</div>
+<div class="mat-elevation-z3">
+    <div fxLayout fxLayoutAlign="center center">
+      <button (click)="downOneImg()" mat-icon-button><mat-icon>chevron_left</mat-icon></button>
+      <button (click)="upOneImg()" mat-icon-button><mat-icon>chevron_right</mat-icon></button>
+    </div>
+</div>

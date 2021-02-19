@@ -1,0 +1,8 @@
+.card-holder {
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 200px;
+}
+mat-card {
+    margin: 10px 10px;
+}
