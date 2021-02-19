@@ -9,8 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
   ngOnInit() {
-    this.http.get(`http://localhost:5000/api/students/`).subscribe((res: { count: number, data: []}) => {
-      console.log(res.data);
-    })
+    
   }
 }
