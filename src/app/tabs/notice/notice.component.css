@@ -1,0 +1,14 @@
+
+.example-container {
+    padding: 10px;
+    margin: 5px 10px;
+}
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    line-height: 25px;
+}

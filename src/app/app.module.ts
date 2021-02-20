@@ -21,6 +21,7 @@ import { GalleryComponent } from './tabs/gallery/gallery.component';
 import { FlowComponent } from './tabs/gallery/flow/flow.component';
 import { ContactComponent } from './tabs/contact/contact.component';
 import { ClubsComponent } from './tabs/clubs/clubs.component';
+import { NoticeComponent } from './tabs/notice/notice.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ClubsComponent } from './tabs/clubs/clubs.component';
     GalleryComponent,
     FlowComponent,
     ContactComponent,
-    ClubsComponent
+    ClubsComponent,
+    NoticeComponent
   ],
   imports: [
     BrowserModule,

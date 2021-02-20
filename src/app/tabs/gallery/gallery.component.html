@@ -1,3 +1,8 @@
+<div class="example-container mat-elevation-z3">
+  <div fxLayout fxLayoutAlign="center center">
+      <h1 style="text-align: center; margin: 0;">Gallery</h1>
+  </div>
+</div>
 <div class="card-container" fxLayout="row wrap" fxFlexFill fxLayoutGap="10px grid">
     <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let event of events; let i = index">
       <mat-card class="example-card mat-elevation-z4" (click)="openDialog(i)">

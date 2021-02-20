@@ -1,0 +1,25 @@
+<div class="example-container mat-elevation-z3">
+    <div fxLayout fxLayoutAlign="center center">
+        <h1 style="text-align: center; margin: 0;">Notices</h1>
+    </div>
+</div>
+
+<div class="example-container mat-elevation-z3" *ngFor="let notice of notices">
+    <div fxLayout fxLayoutAlign="center center">
+        <h1 style="text-align: center; margin: 0;">{{notice.title}} - {{notice.date}}</h1>
+    </div>
+    <hr>
+    <div fxLayout fxLayoutAlign="center center">
+        <p style="text-align: center; margin: 0;">{{notice.description}}</p>
+    </div>
+    <br>
+    <div fxLayout fxLayoutAlign="center center">
+        <h2 style="text-align: center; margin: 0;">Affiliated Links</h2>
+    </div>
+    <div fxLayout fxLayoutAlign="center center">
+        <ul>
+            <li *ngFor="let link of notice.affiliated_links"><a href="{{link}}">{{link}}</a></li>
+        </ul>
+    </div>
+</div>
+  
