@@ -22,6 +22,7 @@ import { FlowComponent } from './tabs/gallery/flow/flow.component';
 import { ContactComponent } from './tabs/contact/contact.component';
 import { ClubsComponent } from './tabs/clubs/clubs.component';
 import { NoticeComponent } from './tabs/notice/notice.component';
+import { AdmissionComponent } from './tabs/admission/admission.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NoticeComponent } from './tabs/notice/notice.component';
     FlowComponent,
     ContactComponent,
     ClubsComponent,
-    NoticeComponent
+    NoticeComponent,
+    AdmissionComponent
   ],
   imports: [
     BrowserModule,
