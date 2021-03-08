@@ -1,0 +1,55 @@
+<!-- Math -->
+<div fxLayout fxLayoutAlign="center center" class="mat-elevation-z3 sub-name">
+    <h1 style="text-align: center; margin: 0;">Math</h1>
+</div>
+<mat-accordion class="container">
+    <mat-expansion-panel class="example-panel" hideToggle [disabled]="true">
+        <mat-expansion-panel-header>
+        <mat-panel-title style="color: black;">
+            Formula
+        </mat-panel-title>
+        <mat-panel-description fxFlex fxLayoutAlign="end" style="color: black;">
+            Chapter
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="example-panel" *ngFor="let formula of formulae_math">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            {{formula.lhs}}
+        </mat-panel-title>
+        <mat-panel-description fxFlex fxLayoutAlign="end">
+            {{formula.chapter}}
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p *ngFor="let each of formula.rhs">{{each}}<mat-divider></mat-divider></p>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<!-- Physics -->
+<div fxLayout fxLayoutAlign="center center" class="mat-elevation-z3 sub-name">
+    <h1 style="text-align: center; margin: 0;">Physics</h1>
+</div>
+<mat-accordion class="container">
+    <mat-expansion-panel class="example-panel" hideToggle [disabled]="true">
+        <mat-expansion-panel-header>
+        <mat-panel-title style="color: black;">
+            Formula
+        </mat-panel-title>
+        <mat-panel-description fxFlex fxLayoutAlign="end" style="color: black;">
+            Chapter
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="example-panel" *ngFor="let formula of formulae_physics">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            {{formula.lhs}}
+        </mat-panel-title>
+        <mat-panel-description fxFlex fxLayoutAlign="end">
+            {{formula.chapter}}
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p *ngFor="let each of formula.rhs">{{each}}<mat-divider></mat-divider></p>
+    </mat-expansion-panel>
+</mat-accordion>

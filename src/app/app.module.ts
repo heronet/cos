@@ -23,6 +23,7 @@ import { ContactComponent } from './tabs/contact/contact.component';
 import { ClubsComponent } from './tabs/clubs/clubs.component';
 import { NoticeComponent } from './tabs/notice/notice.component';
 import { AdmissionComponent } from './tabs/admission/admission.component';
+import { FormulaeComponent } from './tabs/formulae/formulae.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AdmissionComponent } from './tabs/admission/admission.component';
     ContactComponent,
     ClubsComponent,
     NoticeComponent,
-    AdmissionComponent
+    AdmissionComponent,
+    FormulaeComponent
   ],
   imports: [
     BrowserModule,
