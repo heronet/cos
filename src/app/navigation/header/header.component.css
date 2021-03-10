@@ -24,3 +24,16 @@ mat-toolbar {
     margin-top: 10px;
     margin-right: 10px;
 }
+.app-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+.app-progbar {
+    position: fixed;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    width: 99vw;
+    top: 1; /* Sets the sticky toolbar to be on top */
+    z-index: 99; /* Ensure that your app's content doesn't overlap the toolbar */
+}
