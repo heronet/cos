@@ -11,7 +11,7 @@
                     matInput 
                     type="text" 
                     placeholder="First Name" 
-                    name="name" 
+                    name="first_name" 
                     ngModel
                     required
                     #nameInput="ngModel">
@@ -22,7 +22,7 @@
                     matInput 
                     type="text" 
                     placeholder="Last Name" 
-                    name="name" 
+                    name="last_name"
                     ngModel
                     required
                     #nameInput="ngModel">
@@ -40,6 +40,17 @@
                     #emailInput="ngModel">
                 <mat-error *ngIf="emailInput.hasError('required')">Email is invalid</mat-error>
                 <mat-error *ngIf="!emailInput.hasError('required')">Field must not be empty</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input 
+                    matInput 
+                    type="text" 
+                    placeholder="Your Role" 
+                    name="role" 
+                    ngModel
+                    required
+                    #roleInput="ngModel">
+                <mat-error *ngIf="roleInput.hasError('required')">Field must not be empty</mat-error>
             </mat-form-field>
             <mat-form-field hintLabel="Should be at least 6 characters long">
                 <input 
